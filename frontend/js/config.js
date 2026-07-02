@@ -1,12 +1,6 @@
 const LOCAL_BACKEND_URL = window.location.origin;
 
-/*
-  After deploying backend to Render, replace this value with your Render backend URL.
-
-  Example:
-  const LIVE_BACKEND_URL = "https://face-attendance-backend.onrender.com";
-*/
-const LIVE_BACKEND_URL = "PASTE_RENDER_BACKEND_URL_HERE";
+const LIVE_BACKEND_URL = "https://web-face-attendance-system.onrender.com";
 
 function getApiBaseUrl() {
     const hostname = window.location.hostname;

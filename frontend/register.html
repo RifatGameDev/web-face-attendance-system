@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Register Face</title>
+
+    <link rel="stylesheet" href="./css/styles.css?v=4" />
+</head>
+
+<body>
+    <main class="app-shell">
+        <section class="card">
+            <div class="page-header">
+                <h1>Register Face</h1>
+                <p>Automatic guided registration with front, left, right, up, and down face positions.</p>
+            </div>
+
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input id="fullName" type="text" placeholder="Enter full name" autocomplete="name" />
+            </div>
+
+            <div class="camera-area">
+                <video id="video" autoplay muted playsinline></video>
+
+                <div class="face-guide">
+                    <div class="face-frame">
+                        <svg class="face-progress-svg" viewBox="0 0 240 320">
+                            <path class="face-progress-track" d="M120 30
+                   C175 30 212 82 212 160
+                   C212 238 175 290 120 290
+                   C65 290 28 238 28 160
+                   C28 82 65 30 120 30
+                   Z"></path>
+
+                            <path id="progressBar" class="face-progress-ring" d="M120 30
+                   C175 30 212 82 212 160
+                   C212 238 175 290 120 290
+                   C65 290 28 238 28 160
+                   C28 82 65 30 120 30
+                   Z"></path>
+                        </svg>
+
+                        <div class="face-center-dot"></div>
+                    </div>
+                </div>
+
+                <div id="cameraStatus" class="camera-status">
+                    Camera is not started
+                </div>
+            </div>
+
+            <div class="instruction-box">
+                <div id="poseBadge" class="pose-badge">Waiting</div>
+                <h2 id="instructionTitle">Ready to register</h2>
+                <p id="instructionText">
+                    Enter your full name and click Start Auto Registration.
+                </p>
+                <p id="poseDebug" class="pose-debug">
+                    Pose status will appear here.
+                </p>
+            </div>
+
+            <div class="button-row">
+                <button id="startAutoRegisterBtn" class="btn">Start Auto Registration</button>
+                <button id="resetBtn" class="btn secondary" disabled>Reset</button>
+            </div>
+
+            <div class="capture-preview-grid five-grid">
+                <div class="preview-card">
+                    <p>Front</p>
+                    <img id="frontPreview" alt="Front preview" />
+                    <span id="frontStatus" class="capture-state">Not captured</span>
+                </div>
+
+                <div class="preview-card">
+                    <p>Left</p>
+                    <img id="leftPreview" alt="Left preview" />
+                    <span id="leftStatus" class="capture-state">Not captured</span>
+                </div>
+
+                <div class="preview-card">
+                    <p>Right</p>
+                    <img id="rightPreview" alt="Right preview" />
+                    <span id="rightStatus" class="capture-state">Not captured</span>
+                </div>
+
+                <div class="preview-card">
+                    <p>Up</p>
+                    <img id="upPreview" alt="Up preview" />
+                    <span id="upStatus" class="capture-state">Not captured</span>
+                </div>
+
+                <div class="preview-card">
+                    <p>Down</p>
+                    <img id="downPreview" alt="Down preview" />
+                    <span id="downStatus" class="capture-state">Not captured</span>
+                </div>
+            </div>
+
+            <a class="back-link" href="./index.html">Back Home</a>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+    <script src="./js/config.js?v=31"></script>
+    <script src="./js/camera.js?v=31"></script>
+    <script src="./js/face.js?v=31"></script>
+    <script src="./js/storage.js?v=31"></script>
+    <script src="./js/api.js?v=31"></script>
+    <script src="./js/register.js?v=31"></script>
+</body>
+
+</html>

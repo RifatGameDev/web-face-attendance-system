@@ -1,0 +1,37 @@
+/* Strong fixed camera support for verify page */
+@media (max-width: 768px) {
+    body.verify-page {
+        margin: 0 !important;
+        overflow-y: auto !important;
+        background: #090a0d !important;
+    }
+
+    body.verify-page .verify-app-shell {
+        width: 100% !important;
+        max-width: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    body.verify-page .verify-card {
+        width: 100% !important;
+        min-height: 100vh !important;
+        border-radius: 0 !important;
+        padding: 0 12px 20px !important;
+        margin: 0 !important;
+        overflow: visible !important;
+        background: #090a0d !important;
+    }
+
+    body.verify-page .verify-page-header {
+        display: none !important;
+    }
+
+    body.verify-page.verification-completed #cameraSection {
+        display: none !important;
+    }
+
+    body.verify-page.verification-completed #verifyScrollableContent {
+        padding-top: 0 !important;
+    }
+}

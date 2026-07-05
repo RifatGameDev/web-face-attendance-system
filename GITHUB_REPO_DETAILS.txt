@@ -1,0 +1,43 @@
+# GitHub Repository Details
+
+## Repository Description
+
+Browser-based AI face verification system using face-api.js, FastAPI, Supabase pgvector, Render, and Netlify. Generates face vectors in the browser and stores only vector data.
+
+## Website
+
+https://face-verification-system.netlify.app/
+
+## Backend Health Check
+
+https://web-face-attendance-system.onrender.com/api/health
+
+## Suggested GitHub Topics
+
+face-recognition
+face-verification
+face-api-js
+fastapi
+supabase
+pgvector
+netlify
+render
+javascript
+python
+computer-vision
+browser-ai
+attendance-system
+
+## GitHub About Section
+
+Use this text in the GitHub About section:
+
+Browser-based AI face verification system using face-api.js, FastAPI, Supabase pgvector, Render, and Netlify. Generates face vectors in the browser and stores only vector data.
+
+## Important Repo Notes
+
+- Do not upload backend/.env.
+- Upload backend/.env.example only.
+- Keep Supabase secret key only in Render environment variables and local backend/.env.
+- Frontend is deployed from the frontend folder on Netlify.
+- Backend is deployed from the backend folder on Render.
